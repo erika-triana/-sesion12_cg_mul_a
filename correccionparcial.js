@@ -41,7 +41,7 @@ function init() {
     light = new THREE.PointLight(0xFFFF00); 
     
     //  Localización de la luz. (x, y, z).
-    light.position.set(-10, 30, 25);
+    light.position.set(-10, 20, 25);
     scene.add(light);
     
     // Definir array unidimensional
@@ -73,16 +73,15 @@ function init() {
     Cubo[0].translateY(delta);
     Cubo[0].translateZ(delta);
 
-    Cubo[1].translateX(delta); //Cubo 2 trasladado al centro del cubo 1
-    Cubo[1].translateY(alpha2); //Cubo 2 trasladado en el eje Y para quedar tangente al cubo 1
+    Cubo[1].translateX(delta); 
+    Cubo[1].translateY(alpha2); 
     Cubo[1].translateZ(delta);
-    Cubo[1].scale.set(dim2, dim2, dim2); //Cubo 2 escalado a la mitad del cubo 1
+    Cubo[1].scale.set(dim2, dim2, dim2); 
 
-    Cubo[2].translateX(delta); //Cubo 3 trasladado al centro del cubo 2
-    Cubo[2].translateY(alpha3); //Cubo 3 trasladado en el eje Y para quedar tangente al cubo 2
+    Cubo[2].translateX(delta); 
+    Cubo[2].translateY(alpha3); 
     Cubo[2].translateZ(delta);
-    Cubo[2].scale.set(dim3, dim3, dim3); //Cubo 3 escalado a la mitad del cubo 2
-
+    Cubo[2].scale.set(dim3, dim3, dim3);
     camera.position.set(15, 25, 40);
     camera.lookAt(scene.position);
 
